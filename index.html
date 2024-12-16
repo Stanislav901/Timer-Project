@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Секундомер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <div class="mode-switch">
+                <button id="switchToStopwatch" class="active">Секундомер</button>
+                <button id="switchToTimer">Таймер</button>
+            </div>
+            <div id="stopwatch" class="display visible">
+                <span id="minutes">00</span> : <span id="seconds">00</span> : <span id="milliseconds">00</span>
+            </div>
+            <div id="timer" class="display invisible">
+                <input type="number"  id="timerMinutes" min="0" max="59" value="00">
+                :
+                <input type="number"  id="timerSeconds" min="0" max="59" value="00">
+            </div>
+            <div class="controls">
+                <button id="startStop">Старт</button>
+                <button id="reset">Сброс</button>
+            </div>
+        </div>
+    </div>
+    <audio src="" id="alarnSound"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
